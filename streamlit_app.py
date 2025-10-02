@@ -125,7 +125,7 @@ with st.sidebar:
 # Model training
 @st.cache_resource
 def train_model():
-    df = pd.read_csv("revised datasets/output.csv")
+    df = pd.read_csv("revised_datasets/output.csv")
     df_clean = df[df['gross'] > df['budget'] * 1.2]
     df_clean = df_clean[df_clean['budget'] > 100000]
     
